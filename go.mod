@@ -122,3 +122,5 @@ require (
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.2 // indirect
 )
+
+replace sigs.k8s.io/karpenter v1.4.0 => github.com/shiyak-infra/karpenter v1.4.0-shiyak.0
