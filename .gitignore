@@ -17,3 +17,6 @@ go.work.sum
 
 # Binary output
 karpenter-provider-aws-*
+
+# vendor
+vendor

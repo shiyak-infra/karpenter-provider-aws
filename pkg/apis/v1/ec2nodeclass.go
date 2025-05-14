@@ -429,6 +429,11 @@ type BlockDevice struct {
 	// +kubebuilder:validation:Enum:={standard,io1,io2,gp2,sc1,st1,gp3}
 	// +optional
 	VolumeType *string `json:"volumeType,omitempty"`
+	// VolumeInitializationRate of the block device
+	// For more information, see Initialize Amazon EBS volumes (https://docs.aws.amazon.com/ebs/latest/userguide/initalize-volume.html)
+	// Valid Range: Minimum value of 100. Maximum value of 300.
+	// +optional
+	VolumeInitializationRate *int32 `json:"volumeInitializationRate,omitempty"`
 }
 
 // InstanceStorePolicy enumerates options for configuring instance store disks.
